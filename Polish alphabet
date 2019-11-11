@@ -1,0 +1,12 @@
+function correctPolishLetters (string) {
+string = string.replace(/ą/g,"a");
+string = string.replace(/ć/g,"c");
+string = string.replace(/ę/g,"e");
+string = string.replace(/ł/g,"l");
+string = string.replace(/ń/g,"n");
+string = string.replace(/ó/g,"o");
+string = string.replace(/ś/g,"s");
+string = string.replace(/ź/g,"z");
+string = string.replace(/ż/g,"z");
+return string;
+}
