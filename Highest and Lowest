@@ -1,0 +1,14 @@
+function highAndLow(numbers){
+  numbers = numbers.split(' ');
+  let low = parseInt(numbers[0]);
+  let high = parseInt(numbers[0]);
+  for(let i = 0; i < numbers.length; i++){
+  if (parseInt(numbers[i]) < low) {
+  low = numbers[i];
+  }
+  if(parseInt(numbers[i]) > high){
+  high = numbers[i];
+  }
+  }
+  return high + " " + low;
+}
