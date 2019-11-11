@@ -1,0 +1,18 @@
+function isHappyYear(year){
+year = year.toString(10).split("").map(function(t){return parseInt(t)});
+year.sort();
+  for(let i = 0; i < year.length+1; i++){
+        if(year[i] == year[i-1]){
+        return false;
+    }
+  }
+  return true;
+}
+
+function nextHappyYear(year){
+  for(let i = year+1; i<10000;i++){
+        if(isHappyYear(i) == true){
+        return i;
+    }
+  }
+}
