@@ -1,0 +1,11 @@
+function findLongest(array){
+let longest = array[0];
+let digi = array[0].toString().length;
+for(let i = 0; i < array.length; i++) {
+if(digi < array[i].toString().length) {
+longest = array[i];
+digi = array[i].toString().length;
+}
+}
+return longest;
+}
